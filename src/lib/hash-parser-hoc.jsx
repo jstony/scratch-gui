@@ -21,7 +21,7 @@ const HashParserHOC = function (WrappedComponent) {
                 'handleHashChange'
             ]);
             this.state = {
-                hideIntro: false
+                hideIntro: true
             };
         }
         componentDidMount () {
