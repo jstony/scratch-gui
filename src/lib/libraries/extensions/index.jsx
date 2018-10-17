@@ -1,6 +1,7 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
+import minecraftImage from './minecraft.png';
 import musicImage from './music.png';
 import penImage from './pen.png';
 import videoImage from './video-sensing.png';
@@ -18,6 +19,25 @@ import wedoMenuImage from './peripheral-connection/wedo/wedo-small.svg';
 import wedoButtonImage from './peripheral-connection/wedo/wedo-button-illustration.svg';
 
 export default [
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Minecraft"
+                description="Name for the 'Minecraft' extension"
+                id="gui.extension.minecraft.name"
+            />
+        ),
+        extensionId: 'minecraft',
+        iconURL: minecraftImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Control your Minecraft World."
+                description="Description for the 'Minecraft' extension"
+                id="gui.extension.minecraft.description"
+            />
+        ),
+        featured: true
+    },
     {
         name: (
             <FormattedMessage
