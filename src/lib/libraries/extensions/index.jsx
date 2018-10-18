@@ -17,16 +17,18 @@ import ev3MenuImage from './peripheral-connection/ev3/ev3-small.svg';
 import wedoPeripheralImage from './peripheral-connection/wedo/wedo-illustration.svg';
 import wedoMenuImage from './peripheral-connection/wedo/wedo-small.svg';
 import wedoButtonImage from './peripheral-connection/wedo/wedo-button-illustration.svg';
+import minecraftSmallImage from './peripheral-connection/minecraft/minecraft-block.png';
 
 export default [
     {
-        name: (
-            <FormattedMessage
-                defaultMessage="Minecraft"
-                description="Name for the 'Minecraft' extension"
-                id="gui.extension.minecraft.name"
-            />
-        ),
+        // name: (
+        //     <FormattedMessage
+        //         defaultMessage="Minecraft"
+        //         description="Name for the 'Minecraft' extension"
+        //         id="gui.extension.minecraft.name"
+        //     />
+        // ),
+        name: 'Minecraft',
         extensionId: 'minecraft',
         iconURL: minecraftImage,
         description: (
@@ -37,10 +39,11 @@ export default [
             />
         ),
         featured: true,
+        disabled: false,
         launchPeripheralConnectionFlow: true,
         peripheralImage: minecraftImage,
-        smallPeripheralImage: minecraftImage,
-        peripheralButtonImage: minecraftImage,
+        smallPeripheralImage: minecraftSmallImage,
+        peripheralButtonImage: minecraftSmallImage,
         useAutoScan: true,
         connectingMessage: (
             <FormattedMessage
