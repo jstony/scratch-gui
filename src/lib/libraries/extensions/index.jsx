@@ -36,7 +36,20 @@ export default [
                 id="gui.extension.minecraft.description"
             />
         ),
-        featured: true
+        featured: true,
+        launchPeripheralConnectionFlow: true,
+        peripheralImage: minecraftImage,
+        smallPeripheralImage: minecraftImage,
+        peripheralButtonImage: minecraftImage,
+        useAutoScan: true,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting. Make sure Minecraft is running with scratchcraft mod."
+                description="Message to help people connect to Minecraft."
+                id="gui.extension.minecraft.connectingMessage"
+            />
+        ),
+        helpLink: 'https://github.com/scratchcraft/scratchcraft'
     },
     {
         name: (
@@ -192,6 +205,5 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/wedo'
-
     }
 ];
