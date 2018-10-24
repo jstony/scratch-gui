@@ -40,11 +40,7 @@ export default [
         ),
         featured: true,
         disabled: false,
-        launchPeripheralConnectionFlow: true,
-        peripheralImage: minecraftImage,
-        smallPeripheralImage: minecraftSmallImage,
-        peripheralButtonImage: minecraftSmallImage,
-        useAutoScan: true,
+        useAutoScan: false,
         connectingMessage: (
             <FormattedMessage
                 defaultMessage="Connecting. Make sure Minecraft is running with scratchcraft mod."
